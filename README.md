@@ -1,4 +1,4 @@
-# [hellophonegap](https://github.com/aakankshasingh02/Weight-Converter)
+# [Weight Converter](https://github.com/aakankshasingh02/Weight-Converter)
 
 Weight Converter
 
