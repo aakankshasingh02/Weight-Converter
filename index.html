@@ -40,12 +40,14 @@
             function kgToLb() {
                 var kg = document.getElementById("kg").value;
                 var lb = kg / 0.454;
-                document.getElementById("answer").innerHTML = "Result = " + lb;                                
+                document.getElementById("lb").value = " "; 
+                document.getElementById("answer").innerHTML = "Result to LB= " + lb;                                
             }
             function lbToKg() {
                 var lb = document.getElementById("lb").value;
                 var kg = lb * 0.454;
-                document.getElementById("answer").innerHTML = "Result = " + kg;                                
+                document.getElementById("kg").value = " "; 
+                document.getElementById("answer").innerHTML = "Result to KG= " + kg;                                
             }
         </script>
 </body>
