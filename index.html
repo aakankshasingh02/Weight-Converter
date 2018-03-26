@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-image: url("background.png");  
+            background-size: cover;          
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+        *{
+            padding: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center; ">Weight Converter</h1>
+    <h3></h3>
+        <p></p>
+        <b>KG:</b> &nbsp;
+        <input type="number" id="kg"> &nbsp;
+        <button type="button" onclick="kgToLb()" style="padding-left:20px;padding-right:20px;font-size:30px;;font-weight:bold;">To Lb</button>
+        <p></p>
+        <b>LB:</b> &nbsp;
+        <input type="number" id="lb"> &nbsp;
+        <button type="button" onclick="lbToKg()" style="padding-left:20px;padding-right:20px;font-size:30px;;font-weight:bold;">To Kg</button>
+        <p></p>
+        
+
+        <p></p>
+        <span id="answer"></span>
+        
+        <script src="cordova.js"></script>
+        <script>
+            function kgToLb() {
+                var kg = document.getElementById("kg").value;
+                var lb = kg / 0.454;
+                document.getElementById("answer").innerHTML = "Result = " + lb;                                
+            }
+            function lbToKg() {
+                var lb = document.getElementById("lb").value;
+                var kg = lb * 0.454;
+                document.getElementById("answer").innerHTML = "Result = " + kg;                                
+            }
+        </script>
+</body>
+
+</html>
